@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+dubbo:
+  scan:
+    basePackages: com.bingdeng.dubbo.comsumer.service
+  # Dubbo Config properties
+  ## ApplicationConfig Bean
+  application:
+    id: dubbo-comsumer-demo
+    name: dubbo-comsumer-demo
+  ## ProtocolConfig Bean
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20880
+  ## RegistryConfig Bean
+  registry:
+#      id: registry-zk
+    address: zookeeper://192.168.43.58:2181
